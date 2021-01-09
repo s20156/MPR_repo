@@ -10,24 +10,24 @@ public class Player {
     @Id
     @GeneratedValue
     private String name;
-    private int hp;
+    private int health;
     private Long id;
-    private int attack;
+    private int damage;
 
-    public Player(Long id, String name, int hp, int attack) {
+    public Player(Long id, String name, int health, int damage) {
         this.name = name;
-        this.hp = hp;
+        this.health = health;
         this.id = id;
-        this.attack = attack;
+        this.damage = damage;
     }
 
     public Player() {
     }
 
-    public Player(String name, int hp, int attack) {
+    public Player(String name, int health, int damage) {
         this.name = name;
-        this.hp = hp;
-        this.attack = attack;
+        this.health = health;
+        this.damage = damage;
     }
 
     public String getName() {
@@ -38,12 +38,12 @@ public class Player {
         this.name = name;
     }
 
-    public int getHp() {
-        return hp;
+    public int getHealth() {
+        return health;
     }
 
-    public void setHp(int hp) {
-        this.hp = hp;
+    public void setHealth(int health) {
+        this.health = health;
     }
 
     public Long getId() {
@@ -54,11 +54,11 @@ public class Player {
         this.id = id;
     }
 
-    public int getAttack() {
-        return attack;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setAttack(int attack) {
-        this.attack = attack;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 }
